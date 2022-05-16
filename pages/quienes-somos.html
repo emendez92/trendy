@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/resources/favicon-16x16.png">
+    <link rel="shortcut icon" href="../resources/favicon-16x16.png">
     <title>TRENDY | Quienes somos</title>
+        <!--CSS-->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -17,25 +18,50 @@
         </div>
         <nav class="header__nav">
             <ul>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="quienes-somos.html">Quienes Somos</a></li>
-                <li><a href="medios-de-pago.html">Medios de pago</a></li>
-                <li><a href="contactenos.html">Contáctenos</a></li><br><br>
+                <li><a href="../pages/catalogo.html">CATALOGO</a></li>
+                <li><a href="../pages/quienes-somos.html">QUIENES SOMOS</a></li>
+                <li><a href="../pages/medios-de-pago.html">MEDIOS DE PAGO</a></li>
+                <li><a href="../pages/contactenos.html">CONTACTANOS</a></li><br><br>
+            </ul>
+        </nav>
+        <nav id="trendy-menu" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu animateanimated animatefadeInDown">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/catalogo.html">Catalogo</a></li>
+                <li><a href="../pages/contactenos.html">Contactenos</a></li>
+                <li><a href="../pages/medios-de-pago.html">Medios de pago</a></li>
+                <li><a href="../pages/quienes-somos.html">Quienes somos</a></li>
+                <span class="navt">2022<br>© TRENDY</span>
             </ul>
         </nav>
     </header>
+    <!-- termina el header -->
+        <script src="../index.js"></script>
 
-    <main>
+    <main style="height:80vh">
 
     </main>
 
-   <footer class="footer__contenido">
-        <p>Todos los derechos reservados ®</p>
-        <a href="#" target="_Blank"><img src="../resources/facebook.png" alt="Facebook" class="footer__redes"></a>
-        <a href="#" target="_Blank"><img src="../resources/insta.png" alt="Instagram" class="footer__redes"></a>
-        <a href="#" target="_Blank"><img src="../resources/twitter.png" alt="Twitter" class="footer__redes"></a>
-        <a href="#" target="_Blank"><img src="../resources/tiktok.png" alt="TikTok" class="footer__redes"></a>
+    <footer>
+        <div class="footer__contenido">
+            <ul class="footer__redes">
+                <li><a href="#" target="_Blank"><img src="../resources/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#" target="_Blank"><img src="../resources/insta.png" alt="Instagram"></a></li>
+                <li><a href="#" target="_Blank"><img src="../resources/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#" target="_Blank"><img src="../resources/tiktok.png" alt="TikTok"></a></li>
+            </ul>
+            <ul class="footer__pagos">
+                <li><a href="#" target="_Blank"><img src="../resources/Visa_Logo.png" alt="Visa"></a></li>
+                <li><a href="#" target="_Blank"><img src="../resources/1920px-Mastercard_2019_logo.png" alt="Mastercard"></a></li>
+                <li><a href="#" target="_Blank"><img src="../resources/paypal.png" alt="Paypal"></a></li>
+            </ul>
+        </div>
+        <p>© 2022 TRENDY</p>
     </footer>
+    
 </body>
 
 </html>
