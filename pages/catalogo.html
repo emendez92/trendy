@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/resources/favicon-16x16.png">
-    <title>TRENDY | Catálogo</title>
+    <link rel="shortcut icon" href="../resources/favicon-16x16.png">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+    <title>TRENDY | Catálogo</title>
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
         <div class="header__logo">
             <a href="../index.html"><img src="../resources/ICONO.png"></a>
         </div>
+        <!-- NAV BARRA -->
         <nav class="header__nav">
             <ul>
                 <li><a href="../pages/catalogo.html">CATALOGO</a></li>
@@ -23,6 +28,7 @@
                 <li><a href="../pages/contactenos.html">CONTACTANOS</a></li><br><br>
             </ul>
         </nav>
+        <!-- NAV BURGER -->
         <nav id="trendy-menu" onclick="toggleMobileMenu(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -33,18 +39,97 @@
                 <li><a href="../pages/contactenos.html">Contactenos</a></li>
                 <li><a href="../pages/medios-de-pago.html">Medios de pago</a></li>
                 <li><a href="../pages/quienes-somos.html">Quienes somos</a></li>
-                <span class="navt">2022<br>© TRENDY</span>
+                <span class="navt">© 2022 TRENDY</span>
             </ul>
         </nav>
     </header>
-    <!-- termina el header -->
+    <!-- SCRIPT BURGER -->
         <script src="../index.js"></script>
+    <!-- MAIN -->
+    <main class="container">
+    <!-- <main style="height:80vh" > -->
+        <section > 
+            <!-- PRIMER FILA -->
+            <article class="row">
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/1.jpg" alt="Prenda 1">
+                    <p class="grid__item--nombre">Vestido Largo Celeste</p><p class="grid__item--precio">$3200</p></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/2.jpg" alt="Prenda 2">
+                    <p class="grid__item--nombre">Vestido Rosado</p><p class="grid__item--precio">$3500</p></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/3.jpg" alt="Prenda 3">
+                    <p class="grid__item--nombre">Vestido Amarillo</p><p class="grid__item--precio">$2850</p></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/4.jpg" alt="Prenda 4">
+                    <p class="grid__item--nombre">Vestido Blanco </p><p class="grid__item--precio">$3650</p></a>
+                </div>
+            </article>
+            <!-- SEGUNDA FILA -->
+            <article class="row">
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/5.jpg" alt="Prenda 5">
+                    <p class="grid__item--nombre">Vestido Largo Colorido</p><p class="grid__item--precio">$2900</p></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/6.jpg" alt="Prenda 6">
+                    <p class="grid__item--nombre">Remera Blanca</p><p class="grid__item--precio">$2200</p></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/7.jpg" alt="Prenda 7">
+                    <p class="grid__item--nombre">Remera Dorada</p><p class="grid__item--precio">$2600</p></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/8.jpg" alt="Prenda 8">
+                    <p class="grid__item--nombre">Vestido Corto Rojo</p><p class="grid__item--precio">$3500</p></a>
+                </div>
+            </article>
+            <!-- TERCER FILA -->
+            <article class="row">
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/9.jpg" alt="Prenda 9">
+                    <p class="grid__item--nombre">Vestido Largo Negro</p><p class="grid__item--precio">$3400</p></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/10.jpg" alt="Prenda 10">
+                    <p class="grid__item--nombre">Vestido Celeste</p><p class="grid__item--precio">$2750</p></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/11.jpg" alt="Prenda 11">
+                    <p class="grid__item--nombre">Remera Colorida</p><p class="grid__item--precio">$2550</p></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/12.jpg" alt="Prenda 12">
+                    <p class="grid__item--nombre">Vestido Azul</p><p class="grid__item--precio">$3500</p></a>
+                </div>
+            </article>
+            <!-- CUARTA FILA -->
+            <article class="row">
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/13.jpg" alt="Prenda 13">
+                    <p class="grid__item--nombre">Vestido Largo Blanco</p><p class="grid__item--precio">$2300</p></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/14.jpg" alt="Prenda 14">
+                    <p class="grid__item--nombre">Vestido Corto Colorido</p><p class="grid__item--precio">$3000</p></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/15.jpg" alt="Prenda 15">
+                    <p class="grid__item--nombre">Vestido Verde</p><p class="grid__item--precio">$2750</p></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img  src="../resources/ropa/16.jpg" alt="Prenda 16">
+                    <p class="grid__item--nombre">Blusa Blanca</p><p class="grid__item--precio">$2900</p></a>
+                </div>
+            </article>
 
-    <main style="height:80vh" >
-    
+        </section>
     </main>
-
-    <footer>
+    <!-- FOOTER -->
+    <footer class="footer fixed-bottom">
         <div class="footer__contenido">
             <ul class="footer__redes">
                 <li><a href="#" target="_Blank"><img src="../resources/facebook.png" alt="Facebook"></a></li>
@@ -60,7 +145,7 @@
         </div>
         <p>© 2022 TRENDY</p>
     </footer>
-
+    <!-- SCRIPT BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-
 </html>
