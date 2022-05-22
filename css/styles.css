@@ -272,7 +272,6 @@ header {
 .container {
     margin-top: 24px;
     margin-bottom: 149px;
-    
     color: black;
 }
 
@@ -283,12 +282,25 @@ header {
     background-color: black;
 }
 
+.carousel .carousel-item{
+    height: 800px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 600px;
+    object-fit: cover;
+}
+
 /* .col {
     align-content: center;
     margin-bottom: 32px;
     border-radius: 0px 64px 32px 64px;
     background-color: black;
 } */
+
 
 .row>* {
     flex-shrink: 0;
@@ -304,6 +316,7 @@ header {
 .row>*:hover{
     transform:scale(1.05);
     transition:transform 1s;
+    border: solid 2px black;
     cursor: pointer;
 }
 
@@ -369,8 +382,8 @@ footer img {
     overflow: hidden;
 }
 
-.footer__contenido ul li:hover {
-    transform:scale(1.2);
+.footer__redes  li:hover {
+    transform:scale(1.5);
     transition:transform 1s;
     cursor: pointer;
 }

@@ -54,9 +54,35 @@
                 <a href="pages/catalogo.html">SHOP MEN</a>            
             </div>
         </div>
-        <section class="container"> 
-            <!-- MUESTRA  -->
-            <article class="row">
+        <section class="container.fluid"> <!-- CAROUSEL__DESTACADOS -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="resources/ropa/vertical/vertical1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="resources/ropa/vertical/vertical2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="resources/ropa/vertical/vertical3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- MUESTRA GRID -->
+            <!-- <article class="row"> 
                 <div class="col">
                     <a href="#"><img  src="resources/ropa/1.jpg" alt="Prenda 1">
                     <p class="grid__item--nombre">Vestido Largo Celeste</p><p class="grid__item--precio">$3200</p></a>
@@ -73,7 +99,8 @@
                     <a href="#"><img  src="resources/ropa/4.jpg" alt="Prenda 4">
                     <p class="grid__item--nombre">Vestido Blanco </p><p class="grid__item--precio">$3650</p></a>
                 </div>
-            </article>
+            </article> -->
+        </section>
 
     </main>
     <!-- termina el main -->
@@ -86,9 +113,9 @@
                 <li><a href="#" target="_Blank"><img src="resources/tiktok.png" alt="TikTok"></a></li>
             </ul>
             <ul class="footer__pagos">
-                <li><a href="#" target="_Blank"><img src="resources/Visa_Logo.png" alt="Visa"></a></li>
-                <li><a href="#" target="_Blank"><img src="resources/1920px-Mastercard_2019_logo.png" alt="Mastercard"></a></li>
-                <li><a href="#" target="_Blank"><img src="resources/paypal.png" alt="Paypal"></a></li>
+                <li><a><img src="resources/Visa_Logo.png" alt="Visa"></a></li>
+                <li><a><img src="resources/1920px-Mastercard_2019_logo.png" alt="Mastercard"></a></li>
+                <li><a><img src="resources/paypal.png" alt="Paypal"></a></li>
             </ul>
         </div>
         <p>© 2022 TRENDY</p>
