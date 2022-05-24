@@ -31,11 +31,11 @@ header {
     max-height: 188px;
 }
 
-*/ #trendy-menu {
+#trendy-menu {
     float: right;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -85,14 +85,14 @@ header {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
 
 .open .mobile-menu li {
@@ -103,11 +103,11 @@ header {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .open .mobile-menu li:hover {
@@ -275,7 +275,7 @@ header {
     color: black;
 }
 
-.container article div {
+.container div div {
     align-content: center;
     margin-bottom: 32px;
     border-radius: 0px 64px 32px 64px;
@@ -300,30 +300,33 @@ header {
     border-radius: 0px 64px 32px 64px;
     background-color: black;
 } */
-
+.container__producto:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: 0.3s;
+    border: solid 2px black;
+    cursor: pointer;
+    ;
+}
 
 .row>* {
     flex-shrink: 0;
     /* width: 100%; */
     max-width: 100%;
-    margin-right: calc(var(--bs-gutter-x) * .5);
-    margin-left: calc(var(--bs-gutter-x) * .5);
-    padding-right: 0;
-    padding-left: 0;
+    /* margin-right: calc(var(--bs-gutter-x) * .5);
+    margin-left: calc(var(--bs-gutter-x) * .5); */
+    /* padding-right: 0;
+    padding-left: 0; */
     margin-top: var(--bs-gutter-y);
 }
 
-.row>*:hover{
-    transform:scale(1.05);
-    transition:transform 1s;
-    border: solid 2px black;
-    cursor: pointer;
-}
 
 .container img {
     margin-bottom: 4px;
     max-height: 100%;
     max-width: 100%;
+    min-width: 100%;
+    object-fit: cover;
     border-radius: 0px 64px 0px 0px;
 }
 
