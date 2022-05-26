@@ -1,0 +1,473 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#trendy-menu {
+    float: right;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 15px;
+    cursor: pointer;
+}
+
+#trendy-menu div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.navt {
+    font-size: 16px;
+    font-family: "TitilliumWeb";
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    z-index: 4;
+    margin-top: -30px;
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.open .mobile-menu li {
+    height: 55px;
+    width: 100%;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.open .mobile-menu li:hover {
+    background-color: white;
+}
+
+.open .mobile-menu li:hover a {
+    color: #000;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+body {
+    font-family: "TitilliumWeb";
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 10vh;
+}
+
+.header__logo{
+    display: flex;
+    margin: 0px 16px;
+    justify-self: flex-start;
+}
+
+.header__logo img {
+    width: 100px;
+    margin: 0;
+}
+
+.header__logo img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.header__nav {
+    font-size: 19px;
+}
+
+.header__nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.header__nav ul li {
+    margin: 12px;
+}
+
+.header__nav ul li:hover {
+    max-height: 10px;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.header__nav ul li a {
+    color: #FFFFF2;
+}
+
+
+.header__nav ul li a:hover {
+    color: #FFCAF1;
+}
+
+.portada__container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-image: url("../resources/sunflowergirls.jpg");
+    background-position: center center;
+    min-height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.portada__container span{
+    margin-top: 64px;
+}
+
+.portada__container p{
+    margin-top: 80px;
+}
+
+.portada__regular {
+    margin: 35px 0px 35px 0px;
+    display: inline-block;
+    vertical-align: baseline;
+    font-family: "ChangaOne";
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+.portada__highlight {
+    font-family: "ChangaOne";
+    font-size: 54px;
+    letter-spacing: 6px;
+}
+
+.portada__btn {
+    margin-top: 16px;
+}
+
+.portada__btn a {
+    font-size: 18px;
+    font-family: "TitilliumWeb";
+    font-weight: 600;
+    display: inline-block;
+    width: 150px;
+    margin: 0px 42px;
+    background-color: black;
+    border-radius: 0px 64px 32px 64px;
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+
+.portada__btn a:hover {
+    color: #FFCAF1;
+    transform:scale(1.05);
+    transition:transform 1s;
+    cursor: pointer;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
+    place-items: center;
+    margin-top: 32px;
+}
+
+.grid__item {
+    align-content: center;
+    margin-bottom: 32px;
+    background-color: black;
+    color: white;
+    border-radius: 0px 64px 32px 64px;
+}
+
+.grid__item:hover {
+    color: #FFCAF1;
+    transform:scale(1.05);
+    transition:transform 1s;
+    cursor: pointer;
+}
+
+.grid__item--nombre {    
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.grid__item--precio {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.container {
+    margin-top: 24px;
+    margin-bottom: 149px;
+    color: black;
+}
+
+.container div div {
+    align-content: center;
+    margin-bottom: 32px;
+    border-radius: 0px 64px 32px 64px;
+    background-color: black;
+}
+
+.carousel .carousel-item{
+    height: 85vh;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 85vh;
+    object-fit: cover;
+}
+
+/* .col {
+    align-content: center;
+    margin-bottom: 32px;
+    border-radius: 0px 64px 32px 64px;
+    background-color: black;
+} */
+
+.container__producto:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: 0.3s;
+    border: solid 2px black;
+    cursor: pointer;
+    ;
+}
+
+.row>* {
+    flex-shrink: 0;
+    max-width: 100%;
+    margin-top: var(--bs-gutter-y);
+}
+
+
+.container img {
+    margin-bottom: 4px;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    border-radius: 0px 64px 0px 0px;
+}
+
+.formulario {
+    text-align: center;
+    margin-top: 64px;
+}
+
+.formulario__contenido {
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 16px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 15vh;
+}
+
+footer img {
+    height: 24px;
+}
+
+.footer__contenido {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__contenido ul{
+    list-style-type: none;
+    width: 340px;
+}
+
+.footer__contenido li{
+    margin: 0px 16px;
+    height: 32px;
+}
+
+.footer__redes {
+    display: flex;
+    justify-content: flex-end;    
+    padding: 0 24px 0 0;
+    overflow: hidden;
+}
+
+.footer__pagos {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 0 24px;
+    border-left: 1px solid white;
+    text-align: left;
+    overflow: hidden;
+}
+
+.footer__redes  li:hover {
+    transform:scale(1.5);
+    transition:transform 1s;
+    cursor: pointer;
+}
+
+footer p {
+    margin-top: 32px;
+    font-size: 14px;
+}
+
+iframe{
+    border:none;
+}
+
+@font-face {
+    font-family: "TitilliumWeb";
+    src: url(../resources/TitilliumWeb-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "ChangaOne";
+    src: url(../resources/ChangaOne-Regular.ttf) format('truetype');
+}
+
+/* MEDIA CELULAR */
+@media only screen and (min-width: 319px) and (max-width: 560px) {
+    .header__nav{
+        display: none;
+    }
+
+    .portada__btn a {
+        margin: 0px 0px;
+    }
+
+    footer img {
+        height: 18px;
+    }
+
+    .footer__contenido li{
+        margin: 0px 8px;
+    }
+
+    /* .carousel .carousel-item{
+        height: 400px;
+    } */
+
+
+}
+
+/* MEDIA MID */
+@media only screen and (min-width: 561px) and (max-width: 767px) {
+    .header__nav {
+        display: none;
+    }
+
+    /* .carousel .carousel-item{
+        height: 400px;
+    } */
+}
+
+/* MEDIA TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #trendy-menu {
+        display: none;
+    }
+
+    /* .carousel .carousel-item{
+        height: 400px;
+    } */
+}
+
+/* MEDIA PC */
+@media only screen and (min-width: 1023px) and (max-width: 1459px) {
+    #trendy-menu {
+        display: none;
+    }
+    /* .carousel .carousel-item{
+        height: 600px;
+    } */
+}
+
+/* MEDIA XL */
+@media only screen and (min-width: 1459px) {
+    #trendy-menu {
+        display: none;
+    }
+}
