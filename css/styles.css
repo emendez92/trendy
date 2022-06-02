@@ -49,7 +49,7 @@ a:visited {
 
 .open .mobile-menu {
   z-index: 4;
-  margin-top: -30px;
+  margin-top: 1vh;
   background-color: #000;
   height: 100vh;
   width: 100%;
@@ -109,7 +109,7 @@ header {
   background-color: black;
   text-align: center;
   color: white;
-  height: 10vh; }
+  height: 15vh; }
 
 .header__logo {
   display: flex;
@@ -118,7 +118,8 @@ header {
 
 .header__logo img {
   width: 100px;
-  margin: 0; }
+  margin: 0;
+  transition: all .3s ease-in-out; }
 
 .header__logo img:hover {
   transform: scale(1.1);
@@ -133,18 +134,20 @@ header {
   margin-bottom: 0; }
 
 .header__nav ul li {
-  margin: 12px; }
+  margin: 12px;
+  transition: all .3s ease-in-out; }
 
 .header__nav ul li:hover {
   max-height: 10px;
   transform: scale(1.1);
-  transition: 1s; }
+  transition-duration: 240ms; }
 
 .header__nav ul li a {
-  color: #FFFFF2; }
+  color: #FFFFF2;
+  transition: all .3s ease-in-out; }
 
 .header__nav ul li a:hover {
-  color: #FFCAF1; }
+  border-bottom: 2px solid white; }
 
 .portada__container {
   display: flex;
@@ -153,7 +156,7 @@ header {
   align-items: center;
   background-image: url("../resources/sunflowergirls.jpg");
   background-position: center center;
-  min-height: 90vh;
+  min-height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover; }
@@ -193,6 +196,9 @@ header {
   text-align: center;
   color: white; }
 
+.portada__btn a {
+  transition: all .3s ease-in-out; }
+
 .portada__btn a:hover {
   color: #FFCAF1;
   transform: scale(1.05);
@@ -211,7 +217,8 @@ header {
   margin-bottom: 32px;
   background-color: black;
   color: white;
-  border-radius: 0px 64px 32px 64px; }
+  border-radius: 0px 64px 32px 64px;
+  transition: all .3s ease-in-out; }
 
 .grid__item:hover {
   color: #FFCAF1;
@@ -222,24 +229,27 @@ header {
 .grid__item--nombre {
   color: white;
   font-size: 16px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 4px; }
 
 .grid__item--precio {
   color: white;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 8px; }
+  margin-bottom: 4px; }
 
 .container {
-  margin-top: 24px;
-  margin-bottom: 149px;
-  color: black; }
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  color: black;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto; }
 
-.container div div {
+.container div article {
   align-content: center;
-  margin-bottom: 32px;
-  border-radius: 0px 64px 32px 64px;
+  border-radius: 0px 0px 32px 64px;
   background-color: black; }
 
 .carousel .carousel-item {
@@ -252,12 +262,12 @@ header {
   min-height: 85vh;
   object-fit: cover; }
 
-/* .col {
-    align-content: center;
-    margin-bottom: 32px;
-    border-radius: 0px 64px 32px 64px;
-    background-color: black;
-} */
+.container-fluid {
+  padding: 0; }
+
+.container__producto {
+  transition: all .3s ease-in-out; }
+
 .container__producto:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
@@ -268,15 +278,39 @@ header {
 .row > * {
   flex-shrink: 0;
   max-width: 100%;
-  margin-top: var(--bs-gutter-y); }
+  margin-top: var(--bs-gutter-y);
+  padding: 2vh; }
 
 .container img {
   margin-bottom: 4px;
   max-height: 100%;
   max-width: 100%;
-  min-width: 100%;
+  min-width: 100%; }
+
+.quienes {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-position: center center;
+  min-height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
   object-fit: cover;
-  border-radius: 0px 64px 0px 0px; }
+  margin: 10vh; }
+
+.quienes__texto {
+  margin-bottom: 4vh;
+  display: block;
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding: 0vh 1vh 0vh 1vh;
+  text-align: center; }
+
+.quienes__highlight {
+  font-family: "ChangaOne";
+  font-size: 28px;
+  letter-spacing: 6px; }
 
 .formulario {
   text-align: center;
@@ -325,6 +359,9 @@ footer img {
   text-align: left;
   overflow: hidden; }
 
+.footer__redes li {
+  transition: all .3s ease-in-out; }
+
 .footer__redes li:hover {
   transform: scale(1.5);
   transition: transform 1s;
@@ -354,34 +391,22 @@ iframe {
   footer img {
     height: 18px; }
   .footer__contenido li {
-    margin: 0px 8px; }
-  /* .carousel .carousel-item{
-        height: 400px;
-    } */ }
+    margin: 0px 8px; } }
 
 /* MEDIA MID */
 @media only screen and (min-width: 561px) and (max-width: 767px) {
   .header__nav {
-    display: none; }
-  /* .carousel .carousel-item{
-        height: 400px;
-    } */ }
+    display: none; } }
 
 /* MEDIA TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   #trendy-menu {
-    display: none; }
-  /* .carousel .carousel-item{
-        height: 400px;
-    } */ }
+    display: none; } }
 
 /* MEDIA PC */
 @media only screen and (min-width: 1023px) and (max-width: 1459px) {
   #trendy-menu {
-    display: none; }
-  /* .carousel .carousel-item{
-        height: 600px;
-    } */ }
+    display: none; } }
 
 /* MEDIA XL */
 @media only screen and (min-width: 1459px) {
