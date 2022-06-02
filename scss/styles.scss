@@ -346,7 +346,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
-    margin: 10vh;
+    padding: 10vh;
 }
 .quienes__texto {
     margin-bottom: 4vh;
@@ -391,6 +391,7 @@ footer img {
 .footer__contenido {
     display: flex;
     justify-content: center;
+    margin-top: 14px;
 }
 
 .footer__contenido ul{
