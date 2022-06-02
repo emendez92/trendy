@@ -200,10 +200,30 @@ header {
   transition: all .3s ease-in-out; }
 
 .portada__btn a:hover {
-  color: #FFCAF1;
   transform: scale(1.05);
   transition: transform 1s;
   cursor: pointer; }
+
+.carousel .carousel-item {
+  height: 85vh; }
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 85vh;
+  object-fit: cover; }
+
+.catalogo {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  color: black;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container-fluid {
+  padding: 0; }
 
 .grid__container {
   display: grid;
@@ -237,43 +257,36 @@ header {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 4px; }
+  padding-bottom: 4px; }
 
-.container {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  color: black;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto; }
-
-.container div article {
+.catalogo div article {
   align-content: center;
   border-radius: 0px 0px 32px 64px;
   background-color: black; }
 
-.carousel .carousel-item {
-  height: 85vh; }
+.catalogo__titulo {
+  margin-bottom: 4vh;
+  display: block;
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding: 0vh 1vh 0vh 1vh;
+  text-align: center;
+  border-bottom: solid 1px #000; }
 
-.carousel-item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 85vh;
-  object-fit: cover; }
+.catalogo__texto {
+  font-family: "ChangaOne";
+  font-size: 28px;
+  letter-spacing: 6px; }
 
-.container-fluid {
-  padding: 0; }
-
-.container__producto {
+.catalogo__producto {
   transition: all .3s ease-in-out; }
 
-.container__producto:hover {
+.catalogo__producto:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   -webkit-transition: 0.3s;
-  border: solid 2px black;
-  cursor: pointer; }
+  cursor: pointer;
+  filter: drop-shadow(7px 7px 7px #000); }
 
 .row > * {
   flex-shrink: 0;
@@ -281,7 +294,7 @@ header {
   margin-top: var(--bs-gutter-y);
   padding: 2vh; }
 
-.container img {
+.catalogo img {
   margin-bottom: 4px;
   max-height: 100%;
   max-width: 100%;
@@ -312,13 +325,42 @@ header {
   font-size: 28px;
   letter-spacing: 6px; }
 
-.formulario {
-  text-align: center;
-  margin-top: 64px; }
+.form {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  color: black;
+  min-height: 70vh;
+  margin: 0 15vw 0 15vw; }
 
-.formulario__contenido {
+.form__titulo {
+  margin-bottom: 4vh;
+  display: block;
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding: 0vh 1vh 0vh 1vh;
+  text-align: center;
+  border-bottom: solid 0.1vh #000; }
+
+.form__texto {
+  font-family: "ChangaOne";
+  font-size: 28px;
+  letter-spacing: 6px; }
+
+.form__contenido {
   font-weight: 600;
   margin-bottom: 32px; }
+
+.form__datos {
+  margin-top: var(--bs-gutter-y); }
+
+.form p {
+  margin-bottom: 0; }
+
+.form__direccion {
+  margin-bottom: 5vh; }
+
+.form__btn {
+  margin-top: 2vh; }
 
 footer {
   text-align: center;
@@ -369,7 +411,7 @@ footer img {
   cursor: pointer; }
 
 footer p {
-  margin-top: 32px;
+  margin-top: 16px;
   font-size: 14px; }
 
 iframe {
