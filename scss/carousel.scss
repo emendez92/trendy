@@ -1,0 +1,17 @@
+// INDEX -- CAROUSEL ///////////////////////////////////////////////////////////////////////////////////////
+
+.carousel .carousel-item{
+    height: 85vh;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 85vh;
+    object-fit: cover;
+}
+
+.carousel__container {
+    padding: 0;
+}

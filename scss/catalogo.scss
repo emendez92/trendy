@@ -1,0 +1,100 @@
+// CATALOGO ///////////////////////////////////////////////////////////////////////////////////////
+
+.catalogo {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: black;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.catalogo__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
+    place-items: center;
+    margin-top: 32px;
+}
+
+.catalogo__item {
+    align-content: center;
+    margin-bottom: 32px;
+    background-color: black;
+    color: white;
+    border-radius: 0px 64px 32px 64px;
+    transition: all .3s ease-in-out;
+}
+
+.catalogo__item:hover {
+    color: #FFCAF1;
+    transform:scale(1.05);
+    transition:transform 1s;
+    cursor: pointer;
+}
+
+.catalogo__item--nombre {    
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.catalogo__item--precio {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+
+
+.catalogo div article {
+    align-content: center;
+    border-radius: 0px 0px 32px 64px;
+    background-color: black;
+    
+}
+
+.catalogo__titulo {
+    margin-bottom: 4vh;
+    display: block;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 0vh 1vh 0vh 1vh;
+    text-align: center;
+    border-bottom: solid 1px #000;
+}
+
+.catalogo__texto {
+font-family: "ChangaOne";
+font-size: 28px;
+letter-spacing: 6px;
+}
+
+.catalogo__producto {
+    transition: all .3s ease-in-out;
+}
+.catalogo__producto:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: 0.3s;
+    cursor: pointer;
+    filter: drop-shadow(7px 7px 7px #000);
+    ;
+}
+
+.catalogo .row>* {
+    flex-shrink: 0;
+    max-width: 100%;
+    margin-top: var(--bs-gutter-y);
+    padding: 2vh;
+}
+
+.catalogo img {
+    margin-bottom: 4px;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}

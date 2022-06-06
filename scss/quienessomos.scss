@@ -1,0 +1,31 @@
+// QUIENES SOMOS ///////////////////////////////////////////////////////////////////////////////////////
+
+.quienes {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-position: center center;
+    min-height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quienes__texto {
+    margin-bottom: 4vh;
+    display: block;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 0vh 1vh 0vh 1vh;
+    text-align: center;
+}
+
+.quienes__highlight {
+font-family: "ChangaOne";
+font-size: 28px;
+letter-spacing: 6px;
+}

@@ -1,0 +1,22 @@
+// MEDIOS DE PAGO ///////////////////////////////////////////////////////////////////////////////////////
+
+.pagos {
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+    color: black;
+    height: 70vh;
+    margin: 0 15vw 0 15vw;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.pagos__lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagos__imagen {
+    max-height: 55vh;
+    max-width: 80vw;
+}

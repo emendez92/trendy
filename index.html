@@ -15,18 +15,22 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
+        <!-- LOGO -->
         <div class="header__logo">
             <a href="index.html"><img src="resources/ICONO.png"></a>
         </div>
-        <nav class="header__nav">
+        <!-- NAV BARRA -->
+        <div class="header__nav">
             <ul>
                 <li><a href="pages/catalogo.html">CATALOGO</a></li>
                 <li><a href="pages/quienes-somos.html">QUIENES SOMOS</a></li>
                 <li><a href="pages/medios-de-pago.html">MEDIOS DE PAGO</a></li>
-                <li><a href="pages/contactenos.html">CONTACTANOS</a></li><br><br>
+                <li><a href="pages/contactenos.html">CONTACTANOS</a></li>
             </ul>
-        </nav>
+        </div>
+        <!-- NAV BURGER -->
         <nav id="trendy-menu" onclick="toggleMobileMenu(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -37,23 +41,25 @@
                 <li><a href="pages/contactenos.html">Contactenos</a></li>
                 <li><a href="pages/medios-de-pago.html">Medios de pago</a></li>
                 <li><a href="pages/quienes-somos.html">Quienes somos</a></li>
-                <span class="navt">2022<br>© TRENDY</span>
+                <section class="header__firma">
+                    <p>© TRENDY</p>
+                </section>
             </ul>
         </nav>
     </header>
-    <!-- termina el header -->
 
+    <!-- MAIN -->
     <main>
         <div class="portada__container">
-            <p class="portada__regular">Shop with us.. <br>
+            <span class="portada__regular">Shop with us..</span>
             <span class="portada__highlight"> be TRENDY</span>
-            </p>
             <div class="portada__btn">
                 <a href="pages/catalogo.html">SHOP WOMEN</a>
                 <a href="pages/catalogo.html">SHOP MEN</a>            
             </div>
         </div>
-        <section class="container-fluid carousel__container"> <!-- CAROUSEL__DESTACADOS -->
+        <!-- CAROUSEL__DESTACADOS -->
+        <section class="container-fluid carousel__container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -82,7 +88,8 @@
             </div>
         </section>
     </main>
-    <!-- termina el main -->
+
+    <!-- FOOTER -->
     <footer>
         <div class="footer__contenido">
             <ul class="footer__redes">
@@ -94,9 +101,10 @@
         </div>
         <p>© 2022 TRENDY</p>
     </footer>
+
     <!-- SCRIPT BURGER -->
     <script src="/js/index.js"></script>
     <!-- SCRIPT BOOTSTRAP -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

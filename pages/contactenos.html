@@ -14,18 +14,22 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
+        <!-- LOGO -->
         <div class="header__logo">
             <a href="../index.html"><img src="../resources/ICONO.png"></a>
         </div>
+        <!-- NAV BARRA -->
         <nav class="header__nav">
             <ul>
                 <li><a href="../pages/catalogo.html">CATALOGO</a></li>
                 <li><a href="../pages/quienes-somos.html">QUIENES SOMOS</a></li>
                 <li><a href="../pages/medios-de-pago.html">MEDIOS DE PAGO</a></li>
-                <li><a href="../pages/contactenos.html">CONTACTANOS</a></li><br><br>
+                <li><a href="../pages/contactenos.html">CONTACTANOS</a></li>
             </ul>
         </nav>
+        <!-- NAV BURGER -->
         <nav id="trendy-menu" onclick="toggleMobileMenu(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -36,13 +40,14 @@
                 <li><a href="../pages/contactenos.html">Contactenos</a></li>
                 <li><a href="../pages/medios-de-pago.html">Medios de pago</a></li>
                 <li><a href="../pages/quienes-somos.html">Quienes somos</a></li>
-                <span class="navt">2022<br>© TRENDY</span>
+                <section class="header__firma">
+                    <p>© TRENDY</p>
+                </section>
             </ul>
         </nav>
     </header>
-    <!-- termina el header -->
 
-
+    <!-- MAIN -->
     <main class="container form">
         <section>
             <p class="form__titulo">
@@ -90,6 +95,7 @@
         </div>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <div class="footer__contenido">
             <ul class="footer__redes">
@@ -101,9 +107,10 @@
         </div>
         <p>© 2022 TRENDY</p>
     </footer>
+
     <!-- SCRIPT BURGER -->
     <script src="../js/index.js"></script>
     <!-- SCRIPT BOOTSTRAP -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

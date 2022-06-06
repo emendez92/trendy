@@ -1,0 +1,59 @@
+// INDEX -- PORTADA ///////////////////////////////////////////////////////////////////////////////////////
+
+.portada__container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-image: url("../resources/sunflowergirls.jpg");
+    background-position: center center;
+    min-height: 85vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.portada__container p{
+    margin-top: 80px;
+}
+
+.portada__regular {
+    margin-top: 80px;
+    display: inline-block;
+    vertical-align: baseline;
+    font-family: "ChangaOne";
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+.portada__highlight {
+    font-family: "ChangaOne";
+    font-size: 54px;
+    letter-spacing: 6px;
+    margin-bottom: 35px;
+}
+
+.portada__btn {
+    margin-top: 16px;
+}
+
+.portada__btn a {
+    font-size: 18px;
+    font-family: "TitilliumWeb";
+    font-weight: 600;
+    display: inline-block;
+    width: 150px;
+    margin: 0px 16px;
+    background-color: black;
+    border-radius: 0px 64px 32px 64px;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.portada__btn a:hover {
+    transform:scale(1.05);
+    transition:transform 1s;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+a {    
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: "TitilliumWeb";
+    background-color: white;
+}
+
+iframe{
+    border:none;
+}
+
+@font-face {
+    font-family: "TitilliumWeb";
+    src: url(../resources/TitilliumWeb-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "ChangaOne";
+    src: url(../resources/ChangaOne-Regular.ttf) format('truetype');
+}

@@ -16,19 +16,19 @@
 <body>
     <!-- HEADER -->
     <header>
+        <!-- LOGO -->
         <div class="header__logo">
             <a href="../index.html"><img src="../resources/ICONO.png"></a>
         </div>
-
         <!-- NAV BARRA -->
-        <div class="header__nav">
+        <nav class="header__nav">
             <ul>
                 <li><a href="../pages/catalogo.html">CATALOGO</a></li>
                 <li><a href="../pages/quienes-somos.html">QUIENES SOMOS</a></li>
                 <li><a href="../pages/medios-de-pago.html">MEDIOS DE PAGO</a></li>
-                <li><a href="../pages/contactenos.html">CONTACTANOS</a></li><br><br>
+                <li><a href="../pages/contactenos.html">CONTACTANOS</a></li>
             </ul>
-        </div>
+        </nav>
         <!-- NAV BURGER -->
         <nav id="trendy-menu" onclick="toggleMobileMenu(this)">
             <div class="bar1"></div>
@@ -40,7 +40,9 @@
                 <li><a href="../pages/contactenos.html">Contactenos</a></li>
                 <li><a href="../pages/medios-de-pago.html">Medios de pago</a></li>
                 <li><a href="../pages/quienes-somos.html">Quienes somos</a></li>
-                <span class="navt">© 2022 TRENDY</span>
+                <section class="header__firma">
+                    <p>© TRENDY</p>
+                </section>
             </ul>
         </nav>
     </header>
@@ -152,6 +154,7 @@
                 </div>
         </section>
     </main>
+
     <!-- FOOTER -->
     <footer>
         <div class="footer__contenido">
@@ -164,6 +167,7 @@
         </div>
         <p>© 2022 TRENDY</p>
     </footer>
+
     <!-- SCRIPT BURGER -->
         <script src="../js/index.js"></script>
     <!-- SCRIPT BOOTSTRAP -->

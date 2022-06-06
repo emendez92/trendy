@@ -1,0 +1,55 @@
+// CONTACTENOS -- FORM ///////////////////////////////////////////////////////////////////////////////////////
+
+.form {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    color: black;
+    min-height: 70vh;
+    margin: 0 15vw 0 15vw;    
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form__titulo {
+    margin-bottom: 4vh;
+    display: block;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 0vh 1vh 0vh 1vh;
+    text-align: center;
+    border-bottom: solid 0.1vh #000;
+}
+
+.form__texto {
+font-family: "ChangaOne";
+font-size: 28px;
+letter-spacing: 6px;
+}
+
+.form__contenido {
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.form__datos {
+        margin-top: var(--bs-gutter-y);
+}
+
+.form p{
+    margin-bottom: 0;
+}
+
+.form__container {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+}
+
+.form__direccion {
+    margin-bottom: 5vh;
+}
+
+.form__btn {
+    margin-top: 2vh;
+}
