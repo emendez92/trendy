@@ -13,6 +13,11 @@ a:visited {
     text-decoration: none;
 }
 
+:visited {
+    color: white;
+    text-decoration: none;
+}
+
 #trendy-menu {
     float: right;
     -webkit-box-align: center;
@@ -175,6 +180,8 @@ header {
     border-bottom: 2px solid white;
 }
 
+// INDEX -- PORTADA
+
 .portada__container {
     display: flex;
     flex-direction: column;
@@ -227,15 +234,16 @@ header {
     padding: 12px;
     text-align: center;
     color: white;
-}
-.portada__btn a {
     transition: all .3s ease-in-out;
 }
+
 .portada__btn a:hover {
     transform:scale(1.05);
     transition:transform 1s;
     cursor: pointer;
 }
+
+// INDEX -- CAROUSEL
 
 .carousel .carousel-item{
     height: 85vh;
@@ -249,6 +257,12 @@ header {
     object-fit: cover;
 }
 
+.carousel__container {
+    padding: 0;
+}
+
+// CATALOGO
+
 .catalogo {
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -258,11 +272,8 @@ header {
     margin-right: auto;
 }
 
-.container-fluid {
-    padding: 0;
-}
 
-.grid__container {
+.catalogo__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
     grid-template-rows: repeat(1, 1fr);
@@ -270,7 +281,7 @@ header {
     margin-top: 32px;
 }
 
-.grid__item {
+.catalogo__item {
     align-content: center;
     margin-bottom: 32px;
     background-color: black;
@@ -279,21 +290,21 @@ header {
     transition: all .3s ease-in-out;
 }
 
-.grid__item:hover {
+.catalogo__item:hover {
     color: #FFCAF1;
     transform:scale(1.05);
     transition:transform 1s;
     cursor: pointer;
 }
 
-.grid__item--nombre {    
+.catalogo__item--nombre {    
     color: white;
     font-size: 16px;
     text-align: center;
     margin-bottom: 4px;
 }
 
-.grid__item--precio {
+.catalogo__item--precio {
     color: white;
     text-align: center;
     font-size: 18px;
@@ -351,6 +362,8 @@ letter-spacing: 6px;
     min-width: 100%;
 }
 
+// QUIENES SOMOS
+
 .quienes {
     display: flex;
     flex-direction: column;
@@ -382,6 +395,8 @@ font-size: 28px;
 letter-spacing: 6px;
 }
 
+// MEDIOS DE PAGO
+
 .pagos {
     padding-top: 5vh;
     margin-bottom: 5vh;
@@ -402,6 +417,8 @@ letter-spacing: 6px;
     max-height: 55vh;
     max-width: 80vw;
 }
+
+// CONTACTENOS -- FORM
 
 .form {
     padding-top: 5vh;
@@ -455,6 +472,8 @@ letter-spacing: 6px;
     margin-top: 2vh;
 }
 
+// FOOTER
+
 footer {
     text-align: center;
     background-color: black;
@@ -467,7 +486,7 @@ footer {
 }
 
 footer img {
-    height: 24px;
+    height: 3vh;
 }
 
 .footer__contenido {
@@ -478,18 +497,18 @@ footer img {
 
 .footer__contenido ul{
     list-style-type: none;
-    width: 340px;
+    width: 340px;    
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .footer__contenido li{
-    margin: 0px 16px;
     height: 32px;
 }
 
 .footer__redes {
     display: flex;
-    justify-content: flex-end;    
-    padding: 0 24px 0 0;
+    justify-content: center;  
     overflow: hidden;
 }
 
@@ -519,15 +538,6 @@ footer p {
 
 iframe{
     border:none;
-}
-
-
-.portada__btn a {
-    margin: 0px 0px;
-}
-
-footer img {
-    height: 18px;
 }
 
 .footer__contenido li{

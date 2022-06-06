@@ -10,6 +10,10 @@ a:visited {
   color: white;
   text-decoration: none; }
 
+:visited {
+  color: white;
+  text-decoration: none; }
+
 #trendy-menu {
   float: right;
   -webkit-box-align: center;
@@ -194,9 +198,7 @@ header {
   border-radius: 0px 64px 32px 64px;
   padding: 12px;
   text-align: center;
-  color: white; }
-
-.portada__btn a {
+  color: white;
   transition: all .3s ease-in-out; }
 
 .portada__btn a:hover {
@@ -214,6 +216,9 @@ header {
   min-height: 85vh;
   object-fit: cover; }
 
+.carousel__container {
+  padding: 0; }
+
 .catalogo {
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -222,17 +227,14 @@ header {
   margin-left: auto;
   margin-right: auto; }
 
-.container-fluid {
-  padding: 0; }
-
-.grid__container {
+.catalogo__container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
   grid-template-rows: repeat(1, 1fr);
   place-items: center;
   margin-top: 32px; }
 
-.grid__item {
+.catalogo__item {
   align-content: center;
   margin-bottom: 32px;
   background-color: black;
@@ -240,19 +242,19 @@ header {
   border-radius: 0px 64px 32px 64px;
   transition: all .3s ease-in-out; }
 
-.grid__item:hover {
+.catalogo__item:hover {
   color: #FFCAF1;
   transform: scale(1.05);
   transition: transform 1s;
   cursor: pointer; }
 
-.grid__item--nombre {
+.catalogo__item--nombre {
   color: white;
   font-size: 16px;
   text-align: center;
   margin-bottom: 4px; }
 
-.grid__item--precio {
+.catalogo__item--precio {
   color: white;
   text-align: center;
   font-size: 18px;
@@ -400,7 +402,7 @@ footer {
   height: 15vh; }
 
 footer img {
-  height: 24px; }
+  height: 3vh; }
 
 .footer__contenido {
   display: flex;
@@ -409,16 +411,16 @@ footer img {
 
 .footer__contenido ul {
   list-style-type: none;
-  width: 340px; }
+  width: 340px;
+  padding-left: 0;
+  margin-bottom: 0; }
 
 .footer__contenido li {
-  margin: 0px 16px;
   height: 32px; }
 
 .footer__redes {
   display: flex;
-  justify-content: flex-end;
-  padding: 0 24px 0 0;
+  justify-content: center;
   overflow: hidden; }
 
 .footer__pagos {
@@ -443,12 +445,6 @@ footer p {
 
 iframe {
   border: none; }
-
-.portada__btn a {
-  margin: 0px 0px; }
-
-footer img {
-  height: 18px; }
 
 .footer__contenido li {
   margin: 0px 8px; }
