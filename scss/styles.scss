@@ -461,8 +461,10 @@ letter-spacing: 6px;
     margin-bottom: 0;
 }
 
-.form__campos {
+.form__container {
     margin-top: 4vh;
+    display: flex;
+    justify-content: center;
 }
 
 .form__direccion {
@@ -564,12 +566,27 @@ iframe{
     .portada__btn a {
         margin: 0px 0px;
     }
+    
+    .form__datos {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 4vh;
+    }
 }
 
 /* MEDIA MID */
 @media only screen and (min-width: 561px) and (max-width: 767px) {
     .header__nav {
         display: none;
+    }
+
+    
+    .form__datos {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 4vh;
     }
 }
 
@@ -578,6 +595,7 @@ iframe{
     #trendy-menu {
         display: none;
     }
+
 }
 
 /* MEDIA PC */
