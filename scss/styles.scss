@@ -13,11 +13,6 @@ a:visited {
     text-decoration: none;
 }
 
-:visited {
-    color: white;
-    text-decoration: none;
-}
-
 #trendy-menu {
     float: right;
     -webkit-box-align: center;
@@ -63,7 +58,8 @@ a:visited {
 
 .open .mobile-menu {
     z-index: 4;
-    margin-top: -1vh;
+    position: fixed;
+    top: 15vh;
     background-color: #000;
     height: 100vh;
     width: 100%;
@@ -103,6 +99,11 @@ a:visited {
 
 .open .mobile-menu li:hover a {
     color: #000;
+}
+
+.open .mobile-menu li:visited {
+    color: white;
+    text-decoration: none;
 }
 
 .mobile-menu {
@@ -228,7 +229,7 @@ header {
     font-weight: 600;
     display: inline-block;
     width: 150px;
-    margin: 0px 42px;
+    margin: 0px 16px;
     background-color: black;
     border-radius: 0px 64px 32px 64px;
     padding: 12px;
@@ -558,6 +559,10 @@ iframe{
 @media only screen and (min-width: 319px) and (max-width: 560px) {
     .header__nav{
         display: none;
+    }
+
+    .portada__btn a {
+        margin: 0px 0px;
     }
 }
 
