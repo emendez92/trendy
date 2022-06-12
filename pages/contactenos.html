@@ -21,14 +21,14 @@
             <a href="../index.html"><img src="../resources/ICONO.png"></a>
         </div>
         <!-- NAV BARRA -->
-        <nav class="header__nav">
+        <div class="header__nav">
             <ul>
                 <li><a href="../pages/catalogo.html">CATALOGO</a></li>
                 <li><a href="../pages/quienes-somos.html">QUIENES SOMOS</a></li>
                 <li><a href="../pages/medios-de-pago.html">MEDIOS DE PAGO</a></li>
-                <li><a href="../pages/contactenos.html">CONTACTANOS</a></li>
+                <li><a href="../pages/contactenos.html">CONTACTENOS</a></li>
             </ul>
-        </nav>
+        </div>
         <!-- NAV BURGER -->
         <nav id="trendy-menu" onclick="toggleMobileMenu(this)">
             <div class="bar1"></div>
@@ -40,9 +40,6 @@
                 <li><a href="../pages/contactenos.html">Contactenos</a></li>
                 <li><a href="../pages/medios-de-pago.html">Medios de pago</a></li>
                 <li><a href="../pages/quienes-somos.html">Quienes somos</a></li>
-                <section class="header__firma">
-                    <p>© TRENDY</p>
-                </section>
             </ul>
         </nav>
     </header>
@@ -51,26 +48,26 @@
     <main class="container form">
         <section>
             <p class="form__titulo">
-                <span class="form__texto">¿Consultas o sugerencias? Contactanos!</span>
+                <span class="form__texto">¿Consultas o sugerencias? Contactenos!</span>
             </p>
         </section>
         <div class="row form__container">
             <div class="col-xs-12 col-md-8 form__input">
                 <form>
                     <div class="row mb-3">
-                        <label for="text" class="col-sm-2 col-form-label">Nombre</label>
+                        <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="nombre">
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <label for="email" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
                             <input type="email" class="form-control" id="email">
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="textarea" class="col-sm-2 col-form-label">Mensaje</label>
+                        <label for="mensaje" class="col-sm-2 col-form-label">Mensaje</label>
                         <div class="col-sm-10">
                             <textarea class="form-control" id="mensaje" rows="4"></textarea>
                             <button type="submit" class="btn btn-secondary form__btn">Enviar</button>
